@@ -4,6 +4,26 @@
 module.exports = {
   siteMetadata: {
     title: `greens-depot`,
+    menuLinks: [
+      {
+        name: 'Home',
+        link: '/',
+      },
+      {
+        name: 'About',
+        link: '/about/',
+      },
+      {
+        name: 'Products',
+        link: '/products/',
+      },
+      {
+        name: 'Contact us',
+        link: '/contact/',
+      }
+    ],
+
+
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
