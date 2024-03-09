@@ -6,9 +6,10 @@ const NavDesktop = ({navLinks}) => {
        <ul className="flex flex-row gap-3 uppercase">
         {navLinks.map((nav, index) => (
           
-            <li key={index}>
+            <li key={index} >
                 <a href={nav.link} >
-                <h4 className="font-theme font-medium">                
+                <h4 className="flex items-center gap-2 font-theme font-medium text-themeBlack hover:text-themeAccent transition-colors duration-300">                
+                {nav.icons}
                 {nav.name}
                 </h4>
                 </a>

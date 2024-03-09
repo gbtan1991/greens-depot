@@ -2,6 +2,7 @@ import React from 'react'
 import Logo from './Logo'
 import EventBanner from './EventBanner'
 import Navigation from './Navigation'
+import logo1 from '../../assets/image/logo.png'
 
 const Header = () => {
   return (
@@ -10,8 +11,8 @@ const Header = () => {
      <EventBanner />
      
      </div>
-     <div className='w-full flex flex-row  lg:justify-around py-3  lg:py-5'>
-     <Logo />
+     <div className='w-full flex flex-row items-center justify-between lg:justify-around py-8 px-5 lg:py-5 lg:h-fit'>
+     <Logo textColor="text-themeAccent" textHover="text-themeBlack" logo={logo1}/>
      <Navigation />
      </div>
 
