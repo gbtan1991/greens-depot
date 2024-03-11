@@ -15,7 +15,7 @@ const NavDesktop = ({navLinks}) => {
                 </a>
             </li>
 
-          
+        
         ))}
       </ul>
     </div>

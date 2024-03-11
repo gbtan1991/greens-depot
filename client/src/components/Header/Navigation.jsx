@@ -7,7 +7,7 @@ import { FaShop } from "react-icons/fa6";
 import { IoIosChatbubbles } from "react-icons/io";
 
 
-const Navigation = () => {
+const Navigation = ({toggleBurgerMenu}) => {
   const navLinks = [
     {
       name: "home",
@@ -40,7 +40,7 @@ const Navigation = () => {
   return (
     <div>
          <div className="block lg:hidden">        
-            <NavMobile navLinks={navLinks}/>
+            <NavMobile navLinks={navLinks} toggleBurgerMenu={toggleBurgerMenu}/>
         </div>
         <div className="hidden lg:block">
             <NavDesktop navLinks={navLinks}/>

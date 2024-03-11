@@ -4,22 +4,18 @@ import { IoClose } from "react-icons/io5";
 
 const NavMobile = ({navLinks}) => {
 
-    const [burgerMenu, setBurgerMenu] = useState(false)
-  
+const [burgerMenu, setBurgerMenu] = useState(false);
 
+const toggleBurgerMenuState = () => {
+  setBurgerMenu(!burgerMenu);
+ 
+}
 
-    const toggleBurgerMenu = () => {
-       setBurgerMenu(!burgerMenu)
-       
-    }
-
-
-
-  return (
+    return (
    <div>
 
-    <div className='pr-3'>
-      <button className=' w-10 h-10 flex items-center justify-center' onClick={toggleBurgerMenu}>
+    <div>
+      <button className=' w-10 h-10 text-2xl flex items-center justify-center' onClick={toggleBurgerMenuState}>
         {burgerMenu ? <IoClose /> : <GiHamburgerMenu /> }
       </button>
     </div>

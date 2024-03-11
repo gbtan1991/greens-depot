@@ -15,7 +15,6 @@ export default {
           themeBlack: '#050407',
           themeWhite: '#f5f5f5',
       }
-
     },
   },
   plugins: [],
